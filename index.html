@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/grid.css">
+   <link rel="stylesheet" href="assets/css/responsive.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="icon" href="assets/img/iconp.png" type="image/x-icon">
+    <title>CF clone</title>
+    
+</head>
+<body>
+    <div id="header">
+        <a href="#">
+            <img src="assets/img/logo.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul class="nav__links">
+                <li><a class="active" href="#">Trang chủ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Sự kiện</a></li>
+                <li><a href="#">Cộng đồng</a></li>
+                <li>
+                    <a href="#">Giải trí</a>
+                </li>
+                <li><a href="#">Hỗ trợ</a></li>
+                <li><a href="#">Nạp thẻ</a></li>
+                <li><a href="#">Đăng ký</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="download"><button>Tải game</button></a>
+    </div>
+
+    <div id="Banner">
+        <img src="assets/img/banner-top.png" alt="banner-top" class="banner__top">
+    </div>
+    <div id="container">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                <div class="slide first">
+                    <img src="assets/img/sl1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/sl2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/img/sl3.png" alt="">
+                </div>
+    
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+    
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!-- JS auto slider start -->
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' +  counter).checked = true;
+                    counter++;
+                    if(counter > 3){
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+            <!-- JS auto slider end -->
+        </div>
+        <div class="worldtour">
+            <a href="#">
+                <img src="https://dotkich.goplay.vn/trang-chu/newdesign/images/sfs.png" alt="Giai dau">
+            </a>
+        </div>    
+    </div>
+    <div id="content">
+           <div class="grid wide">
+               <div class="row">
+                    <div class="col l-4 c-12">
+                        <div class="item__left">
+                            <h2 class="title">
+                                Tin Tức - Sự Kiện
+                            </h2>
+                            <div class="item__left--full">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/29aee1fc-384a-4402-8cf4-bddf6ee8bc4f.png" alt="">
+                                <div class="item__left--desc">
+                                    <a class="item__left--desc-l" href="#">[Sự kiện] chuỗi sự kiện đặc biệt giữa tháng 8</a>
+                                    <p class="item__left--desc-s">10/08/2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-4 c-12">
+                        <div class="item__right">
+                            <div class="item__right--img">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/41f9ad0a-7803-4630-a636-7793ff793300.jpg" alt="">
+                                <div class="item__right--desc">
+                                    <a href="">Công bố về CFS grand finals 2021</a>
+                                    <p>08/08/2021</p> 
+                                </div>
+                            </div>
+                            <div class="item__right--img">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/b723ef79-995c-4631-9d90-e72751f3d1ba.jpg" alt="">
+                                <div class="item__right--desc">
+                                    <a href="">[Thông báo đóng cổng nạp thẻ gate]</a>
+                                    <p>27/07/2021</p> 
+                                </div>
+                            </div>
+                            <div class="item__right--img">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/67bf43cc-20aa-4ba8-8ca5-63ea002e492e.jpg" alt="">
+                                <div class="item__right--desc">
+                                    <a href="">[GIẢI ĐẤU] CLAN WAR – Cơ hội thi đấu chuyên nghiệp cho tất cả chúng ta!</a>
+                                    <p>26/07/2021</p> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col l-4 c-12">
+                        <div class="item__right">
+                            <div class="item__right--img">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/f64f2748-e913-4670-a0f4-f3ec424d8514.jpg" alt="">
+                                <div class="item__right--desc">
+                                    <a href="">[Sự kiện] ra mắt QCMM Rodimus punk từ 15/08 tới 29/08</a>
+                                    <p>18/08/2021</p>
+                                </div>
+                            </div>
+                            <div class="item__right--img">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/9c8def9b-ba01-4c4e-8ed7-dbacda15cdf4.png" alt="">
+                                <div class="item__right--desc">
+                                    <a href="">[SỰ KIỆN] CHUỖI SỰ KIỆN ĐẶC BIỆT TỪ 06/08 tới 20/08</a>
+                                    <p>05/08/2021</p>
+                                </div>
+                            </div>
+                            <div class="item__right--img">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/News/32/2da03d10-0f98-4457-881d-30281e3d0d05.jpg" alt="">
+                                <div class="item__right--desc">
+                                    <a href="">[SỰ KIỆN] BẮN KHO ĐẠN SEASON 2 - THANH LONG TRỖI DẬY</a>
+                                    <p>31/07/2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+           <div class="grid wide">
+               <div class="row">
+                   <div class="col l-4 c-12">
+                       <a href="#" class="cart">
+                           <img src="https://dotkich.goplay.vn/trang-chu/newdesign/images/1.png" alt="" class="cart-info">
+                       </a>
+                   </div>
+                   <div class="col l-4 c-12">
+                    <a href="#" class="cart">
+                        <img src="https://dotkich.goplay.vn/trang-chu/newdesign/images/2.png">
+                    </a>
+                </div>
+                <div class="col l-4 c-12">
+                    <a href="#" class="cart">
+                        <img src="https://dotkich.goplay.vn/trang-chu/newdesign/images/3.png" alt="" class="cart-info">
+                    </a>
+                </div>
+               </div>
+           </div>
+           <div class="grid wide">
+               <div class="row">
+                   <div class="col l-4 c-12">
+                    <h2 class="title">
+                        <a href=""> Giải trí</a>
+                    </h2>
+                       <div class="new__update bdf">
+                           <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/a6297274-09c2-4662-9564-8d6bc29e5dd0.jpg" alt="">
+                           <div class="new__update--desc bdf--desc">
+                               <a href="">Đột Kích Trong Tầm Ngắm. | [ĐIỂM TIN UPDATE - 11/08/2020]</a>
+                           </div>
+                       </div>
+                       <div class="new__update bdf">
+                        <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/a6297274-09c2-4662-9564-8d6bc29e5dd0.jpg" alt="">
+                        <div class="new__update--desc bdf--desc">
+                            <a href="">BỘ VŨ KHÍ PEONY CHUẨN BỊ CẬP BẾN 01/10/2020</a>
+                        </div>
+                    </div>
+                    <div class="new__update bdf">
+                        <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/a6297274-09c2-4662-9564-8d6bc29e5dd0.jpg" alt="">
+                        <div class="new__update--desc bdf--desc">
+                            <a href="">Làng Bình Minh</a>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col l-4 c-12">
+                       <div class="highlight--full">
+                            <div class="highlight bdf">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/961ab92e-3ee0-438c-8b5c-d17068ce6bb7.jpg" alt="">
+                                <div class="highlight--desc bdf--desc">
+                                    <a href="">CFVN CHAMPIONSHIP 2021 | Highlight vòng 16 đội ngày 02/05/2021</a>
+                                </div>
+                            </div>
+                            <div class="highlight bdf">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/961ab92e-3ee0-438c-8b5c-d17068ce6bb7.jpg" alt="">
+                                <div class="highlight--desc bdf--desc">
+                                    <a href="">CFVN CHAMPIONSHIP 2021 | Highlight vòng 16 đội ngày 01/05/2021</a>
+                                </div>
+                            </div>
+                            <div class="highlight bdf">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/961ab92e-3ee0-438c-8b5c-d17068ce6bb7.jpg" alt="">
+                                <div class="highlight--desc bdf--desc">
+                                    <a href="">Cùng xem một số đại diện của các đội tuyển đã lọt vào vòng 16 nói gì nhé !</a>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="col l-4 c-12">
+                       <div class="exp--full">
+                            <div class="exp bdf">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/17d7b4a0-d6e7-4194-a1c7-83b07ec08b7d.jpg" alt="">
+                                <div class="exp--desc bdf--desc">
+                                    <a href="">Đột Kích Trong Tầm Ngắm | Một số chia sẻ của streamer Shady về giải đấu CFEL sắp tới !</a>
+                                </div>
+                            </div>
+                            <div class="exp bdf">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/17d7b4a0-d6e7-4194-a1c7-83b07ec08b7d.jpg" alt="">
+                                <div class="exp--desc bdf--desc">
+                                    <a href="">Cùng Streamer Toni trở thành Pro trong bản đồ CFS_Trạm Vệ Tinh Nhé</a>
+                                </div>
+                            </div>
+                            <div class="exp bdf">
+                                <img src="http://photoservice.goplay.vn///Resources/Upload/Images/Media/32/17d7b4a0-d6e7-4194-a1c7-83b07ec08b7d.jpg" alt="">
+                                <div class="exp--desc bdf--desc">
+                                    <a href="">Hướng dẫn di chuyển không lộ tiếng - Streamer Toni</a>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="endcontainer_banner">
+                <img src="https://dotkich.goplay.vn/trang-chu/newdesign/images/banner-bt.png" alt="">
+                <h2>
+                    THAM GIA CỘNG ĐỒNG ĐỘT KÍCH
+                </h2>
+                <h3>
+                    Nhận ngay nhiều vật phẩm dành cho tài khoản mới
+                </h3>
+                <a href=""><button class="btn__downln">Tải game ngay</button></a>
+           </div>
+    </div>
+    <div id="footer">
+        <div class="websocial">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6">
+                        <div class="socialfb">
+                            <a href="">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            
+                            <a href="" class="fb">Join us on Facebook</a>
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <div class="socialyt">
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="" class="yt">Watch us on Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__banner">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 fobvtc">
+                            <img class="iconvtc" src="https://dotkich.goplay.vn/trang-chu/newdesign/images/vtc-logo.png" alt="">
+                        </div>
+                        <div class="col l-4 fobvtc">
+                            <img src="https://dotkich.goplay.vn/trang-chu/newdesign/images/sge-logo.png" alt="" class="iconsmilegate">
+                        </div>
+                        <div class="col l-4 fobr">
+                            <p>Giấy phép phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng số 1099/QĐ-BTTTT cấp ngày 01/07/2020</p>
+                            <div class="fobr__container">
+                                <div class="headset">
+                                    <i class="fas fa-headset"></i> <h5>1900 63 68 76</h5>
+                                </div>
+                                <div class="mail">
+                                    <i class="far fa-envelope-open"></i> <h5>hotro@go.vn</h5>   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-12 text__end">
+                            <h5 class="Text__end-desc">Bản quyền trò chơi thuộc Smilegate Entertainment Và được clone bởi CP</h5>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
